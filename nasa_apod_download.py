@@ -10,12 +10,9 @@ import json
 import datetime
 
 
-if os.name == 'nt':
-    fpath = "D:/Pictures/Wallpaper"
-else:
-    fpath = "/mnt/d/Pictures/Wallpaper"
+fpath = "/Users/cgrant/Pictures/Wallpaper"
 
-with open('../../nasa.txt', 'r') as f:
+with open('/Users/cgrant/OneDrive/GitHub/nasa.txt', 'r') as f:
     API_KEY = f.readlines()[0]
 
 apod = "https://api.nasa.gov/planetary/apod?api_key={}".format(API_KEY)
