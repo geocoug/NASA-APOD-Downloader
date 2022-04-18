@@ -15,10 +15,10 @@ Download the NASA Astronomy Picture of the Day (APOD).
 
 1. Run the script:
 
--   `python3 nasa_apod_dl.py`
+`python3 nasa_apod_dl.py`
 
 **Or**
 
--   `docker build -t nasa-apod-dl .`
+`docker build -t nasa-apod-dl .`
 
--   `docker run --rm -it -v $(PWD)/nasa.txt:/usr/src/app/nasa.txt nasa-apod-dl`
+`docker run --rm -it -v $(PWD)/nasa.txt:/usr/src/app/nasa.txt nasa-apod-dl`
