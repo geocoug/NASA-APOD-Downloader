@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 # NASA APOD Downloader
 # https://github.com/geocoug/NASA-APOD-Downloader.git
 
@@ -83,7 +82,7 @@ def get_token(parameter: str) -> str:
     """Return a token string."""
     if os.path.exists(parameter):
         try:
-            with open(parameter, "r", encoding="utf-8") as file:
+            with open(parameter, encoding="utf-8") as file:
                 _token = file.readlines()[0]
         except Exception as error:
             raise error
